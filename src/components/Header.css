@@ -1,0 +1,45 @@
+.header {
+  padding-top: 1.5rem;
+  background-color: var(--gray);
+}
+
+.header-title {
+  margin-bottom: 2.5rem;
+}
+
+.header-text {
+  margin-bottom: 2rem;
+}
+
+.header-columns {
+  padding-bottom: 2rem;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: var(--blue);
+}
+
+.banner-title {
+  z-index: 20;
+  padding-left: 40px;
+  color: var(--gray-300);
+}
+
+.arrow {
+  position: relative;
+}
+
+.banner::after {
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  content: '';
+  width: 120px;
+  height: 110px;
+  background-color: var(--blue);
+  clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+}
