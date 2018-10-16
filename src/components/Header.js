@@ -30,7 +30,7 @@ const Header = () => (
       <div className="banner">
         <h2 className="banner-title">
           Create a
-          <span className="h1-highlight"><i>powerful </i></span>
+          <span className="h1-highlight"><i> powerful </i></span>
           solution now
         </h2>
         <a className="anchor btn btn-gray200" href="https://reactjs.org/">Get started</a>

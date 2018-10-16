@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Oswald:400,700');
+
 * {
   margin: 0;
   padding: 0;
@@ -240,4 +242,81 @@ h5 {
 /******* Box shadow *******/
 .shadow-effect {
   box-shadow: 6px 2px 8px -6px var(--gray-500);
+}
+
+/****************************************
+  * MEDIA QUERIES
+**/
+@media only screen and (max-width: 1150px) {
+  .pr-6 {
+    padding-right: 6rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .col-3 {
+    flex: 50%;
+  }
+
+  .flex-item {
+    flex: 1 0 20%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .header-columns {
+    padding-bottom: 4rem !important;
+  }
+
+  .banner {
+    display: none !important;
+  }
+
+  .section-intro {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .copyright__text {
+    margin-bottom: 20px;
+  }
+
+  .flex-container {
+    padding-bottom: 10rem;
+  }
+
+  .float {
+    float: none;
+  }
+
+  .fab:hover .icon-name-hover,
+  .fas:hover .icon-name-hover {
+    display: none;
+  }
+
+  .media-icon {
+    font-size: 20px;
+  }
+
+  .media-item:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .justify-content {
+    justify-content: space-around;
+  }
+
+  .flex-container {
+    padding-bottom: 50px;
+  }
 }
