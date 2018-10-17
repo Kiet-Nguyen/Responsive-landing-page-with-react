@@ -1,8 +1,9 @@
 import React from 'react';
 
-import '../index.css';
+import '../../index.css';
 import './Header.css';
-import headerImg from '../assets/Header-img.png';
+import headerImg from '../../assets/Header-img.png';
+import Banner from '../Main/Banner/Banner';
 
 const Header = () => (
   <header id="top" className="header">
@@ -27,14 +28,13 @@ const Header = () => (
           <a className="anchor btn btn-blue" href="https://reactjs.org/">Learn more</a>
         </div>
       </div>
-      <div className="banner">
-        <h2 className="banner-title">
-          Create a
-          <span className="h1-highlight"><i> powerful </i></span>
-          solution now
-        </h2>
-        <a className="anchor btn btn-gray200" href="https://reactjs.org/">Get started</a>
-      </div>
+
+      <Banner
+        headingPart1="Create a"
+        highlight=" powerful "
+        headingPart2="solution now"
+        buttonText="Get started"
+      />
     </div>
   </header>
 );

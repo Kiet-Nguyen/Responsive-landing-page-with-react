@@ -4,7 +4,7 @@
 
 .border-img {
   border-top: 12px solid transparent;
-  border-image: url(../assets/Border-BG.jpg) 40 round;
+  border-image: url(../../assets/Border-BG.jpg) 40 round;
   background-color: var(--gray-300);
 }
 
